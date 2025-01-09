@@ -1,6 +1,6 @@
 import { Module } from '@nestjs/common';
 import { ConfigModule } from '@nestjs/config';
-import { SmtpConfiguration } from 'src/config/configuration';
+import { SmtpConfiguration } from '../config/configuration';
 import { SharedService } from './shared.service';
 
 @Module({

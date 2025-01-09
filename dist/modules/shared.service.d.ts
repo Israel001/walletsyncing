@@ -1,6 +1,6 @@
 import { ConfigType } from '@nestjs/config';
-import { SmtpConfiguration } from 'src/config/configuration';
-import { IEmailDto } from 'src/types';
+import { SmtpConfiguration } from '../config/configuration';
+import { IEmailDto } from '../types';
 export declare class SharedService {
     private readonly smtpConfig;
     constructor(smtpConfig: ConfigType<typeof SmtpConfiguration>);

@@ -19,7 +19,8 @@
     "ejs": "^3.1.10",
     "nodemailer-promise": "^2.0.0",
     "reflect-metadata": "^0.2.2",
-    "rxjs": "^7.8.1"
+    "rxjs": "^7.8.1",
+    "vercel": "^39.0.2"
   },
   "devDependencies": {
     "@nestjs/cli": "^10.4.9",

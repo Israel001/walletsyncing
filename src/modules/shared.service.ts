@@ -1,8 +1,8 @@
 import { Inject, Injectable } from '@nestjs/common';
 import { ConfigType } from '@nestjs/config';
-import { SmtpConfiguration } from 'src/config/configuration';
+import { SmtpConfiguration } from '../config/configuration';
 import mailer from 'nodemailer-promise';
-import { IEmailDto } from 'src/types';
+import { IEmailDto } from '../types';
 
 @Injectable()
 export class SharedService {
